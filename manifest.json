@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "EMU Timetable to JSON Exporter",
+  "version": "1.0",
+  "description": "Export your timetable to JSON format from the student portal.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Export Timetable",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://student.emu.edu.tr/Academic/TimeTable"],
+      "js": ["content.js"]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Export Timetable</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        width: 250px;
+        padding: 10px;
+        margin: 0;
+        background-color: #f8f9fa;
+      }
+
+      #logo {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #logo img {
+        width: 100px;
+        height: auto;
+      }
+
+      #header-link {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #007bff;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      #header-link:hover {
+        text-decoration: underline;
+      }
+
+      #status {
+        font-size: 14px;
+        color: #999;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 5px;
+      }
+
+      #exportBtn {
+        background-color: #007bff;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        margin: 0 auto;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 80%;
+      }
+
+      #exportBtn:disabled {
+        background-color: #888;
+        cursor: not-allowed;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      footer {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 12px;
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo section -->
+      <div id="logo">
+        <img src="https://student.emu.edu.tr/img/logo.png" alt="EMU Logo" />
+      </div>
+
+      <!-- Header link under logo -->
+      <a
+        href="https://github.com/alidevecioglu/EMU-Timetable-to-JSON-Exporter"
+        id="header-link"
+        target="_blank"
+        >EMU Timetable to JSON Exporter</a
+      >
+
+      <!-- Status message -->
+      <div id="status">Checking page...</div>
+
+      <!-- Export button -->
+      <button id="exportBtn" disabled>Export JSON</button>
+
+      <!-- Footer message -->
+      <footer>
+        This is a personal project and is not affiliated with the university.
+      </footer>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
