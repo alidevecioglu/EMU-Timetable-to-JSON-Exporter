@@ -46,5 +46,5 @@ For development and manual installation, follow these steps:
 To modify or contribute to the extension, clone this repository and use the Chrome or Firefox extension developer tools to load the unpacked extension for testing.
 
 ```bash
-git clone https://github.com/yourusername/emu-timetable-to-json-exporter.git
+git clone https://github.com/alidevecioglu/EMU-Timetable-to-JSON-Exporter
 ```
